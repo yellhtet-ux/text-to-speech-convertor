@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Text To Speech Convertor</title>
+</head>
+<body>
+    <main class="main__container">
+
+        <header class="header">
+            <h1>Text To Speech</h1>
+        </header>
+        <section class="voice__selection">
+            <p class="voice__selection__title">Select Voice</p>
+           <select class="voices"></select>
+        </section>
+
+        <section class="control__center">
+            <span class="control__block">
+            <h2 class="control__title">Volume</h2>
+            <input class="volume" type="range" min="0" max="1" value="1" step="0.1"/>
+            <span class="volume__label">1</span>
+            </span>
+            <span class="control__block">
+            <h2 class="control__title">Rate</h2>
+            <input class="rate" type="range" min="0.1" max="10" value="1" step="0.1"/>
+            <span class="rate__label">1</span>
+        </span>
+            <span class="control__block">
+            <h2 class="control__title">Pitch</h2>
+            <input class="pitch" type="range" min="0" max="2" value="1" step="0.1"/>
+            <span class="pitch__label">1</span>    
+        </span>
+        </section>
+
+        <section class="text-area__section">
+            <textarea class="text_area" cols="50" rows="20" placeholder="Type Anything Here"></textarea>
+        </section>
+
+        <section class="buttons">
+            <button class="btn start" type="submit">Start</button>
+            <button class="btn pause" type="submit">Pause</button>
+            <button class="btn resume" type="submit">Resume</button>
+            <button class="btn cancel" type="submit">Cancel</button>
+        </section>
+    </main>
+    <script src="./textToSpeech.js"></script>
+</body>
+</html>
