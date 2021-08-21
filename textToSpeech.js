@@ -1,7 +1,7 @@
 const Speech = new SpeechSynthesisUtterance();
 const Synthesis = window.speechSynthesis;
 let voices = [];
-Speech.lang = "my";
+Speech.lang = "en";
 
 //Inputs
 const textArea = document.getElementsByTagName("textarea")[0];
