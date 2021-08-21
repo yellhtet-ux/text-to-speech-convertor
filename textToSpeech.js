@@ -44,12 +44,14 @@ const setPitch = () => {
 
 Synthesis.onvoiceschanged = () => {
   voices = Synthesis.getVoices();
-  console.log(voices);
   Speech.voice = voices[0];
 
   voices.forEach(
     (sounds, i) =>
-      (voicesSelection.options[i] = new Option(sounds.getElementsByTagName, i))
+      (voicesSelection.options[i] = new Option(
+        sounds.lang.toLocaleUpperCase(),
+        i
+      ))
   );
 };
 
